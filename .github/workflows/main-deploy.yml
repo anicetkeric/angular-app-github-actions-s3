@@ -26,14 +26,14 @@ jobs:
         node-version: '14.x'
 
     # Allows for re-using node_modules caching, making builds a bit faster.
-    -name: node_modules caching
+    - name: node_modules caching
       uses: actions/cache@v1 
       with:
         path: ~/.npm
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-   
-    
+
     # Install the node modules
     - name: NPM Install
       run: npm install    
