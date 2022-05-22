@@ -46,9 +46,9 @@ jobs:
     - name: NPM build Angular
       run: npm run build
 
-      # Create production build
+    # Create production build
     #- name: Production Build
-     # run: npm run build --prod 
+    # run: npm run build --prod 
 
     # Deploy to S3
     - name: Deploy to S3
