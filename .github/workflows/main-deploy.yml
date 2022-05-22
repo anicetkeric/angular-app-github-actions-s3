@@ -40,7 +40,8 @@ jobs:
 
     # Run all tests
     - name: Run tests
-      run: npm run test:headless
+      run: |
+          npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
 
     # Create dev build
     - name: NPM build Angular
