@@ -61,6 +61,6 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-        AWS_BUCKET_NAME: ${{ secrets.AWS_S3_BUCKET_NAME }}
-        SOURCE: dist/angular-app-github-actions-s3/
-        TARGET: '' 
+        AWS_REGION: 'us-east-2' 
+        SOURCE_DIR: 'dist/angular-app-github-actions-s3/'
+        #TARGET: '' 
