@@ -63,4 +63,3 @@ jobs:
         AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
         AWS_REGION: 'us-east-2' 
         SOURCE_DIR: 'dist/angular-app-github-actions-s3/'
-        #TARGET: '' 
